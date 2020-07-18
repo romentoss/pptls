@@ -2,7 +2,7 @@ import random
 
 try:
     def generator():
-        num_random = random.choice(['piedra', 'papel', 'tijera', 'lagarto', 'spock'])
+        tuple_random = random.choice(['piedra', 'papel', 'tijera', 'lagarto', 'spock'])
         data = str(input('Introduce piedra, papel, tijera, lagarto o spock  '))
         win = {'piedra':['tijera', 'lagarto'],
                 'papel':['piedra', 'sopock'], 
@@ -12,8 +12,8 @@ try:
                 }
         dic_data= win[data.lower()]
 
-        if data != num_random:
-            if num_random in dic_data:
+        if data != tuple_random:
+            if tuple_random in dic_data:
                 print('¡Has ganado!') 
             else:
                 print('¡Has perdido!')  
