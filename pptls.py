@@ -5,7 +5,7 @@ try:
         tuple_random = random.choice(['piedra', 'papel', 'tijera', 'lagarto', 'spock'])
         data = str(input('Introduce piedra, papel, tijera, lagarto o spock  '))
         win = {'piedra':['tijera', 'lagarto'],
-                'papel':['piedra', 'sopock'], 
+                'papel':['piedra', 'spock'], 
                 'tijera':['papel', 'lagarto'],
                 'lagarto':['spock','papel'],
                 'spock':['tijera','piedra']
